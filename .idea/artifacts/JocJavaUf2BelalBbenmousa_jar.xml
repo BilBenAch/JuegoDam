@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JocJavaUf2BelalBbenmousa:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JocJavaUf2BelalBbenmousa_jar</output-path>
+    <root id="archive" name="JocJavaUf2BelalBbenmousa.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Desktop/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="JocJavaUf2BelalBbenmousa" />
+    </root>
+  </artifact>
+</component>
