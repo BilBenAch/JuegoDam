@@ -27,7 +27,7 @@ Aquest projecte conté un menú general amb el seus submenús com el de la imatg
         El joc 1 tracta del clàssic 3 en ratlla, on hi haurà dos jugadors, sempre començarà el jugador 1,
         el qual tindrà assignada la 'X', el jugador dos, les 'O'.
         Per consola, haureu d'introduir la posició desitjada que anirà des d'1 3 a 3 3.
-        No es podrà ni sobreescriure una posició ja introduïda, hauràs d'introduir un altre com la posició fins que es pugui fer,
+        No es podrà sobreescriure una posició ja introduïda, hauràs d'introduir un altre com la posició fins que es pugui fer,
         guanyarà el que obtingui en 3 caselles seguides amb la seva marca, sigui en vertical, diagonal o horitzontal,
         en cas que no hi hagi guanyadors, s'acabarà la partida amb un empat.
       
