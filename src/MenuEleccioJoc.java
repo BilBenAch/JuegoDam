@@ -1,22 +1,22 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
-public class MenuEleccioJoc {//Creamos el menú que tendrán nuestros juegos
+public class MenuEleccioJoc {
     public void MenuJoc(){
         Scanner sc = new Scanner(System.in);
-        int opcion = 0;//Las variables que tendrán nuestros menús
+        int opcion = 0;
         int opcioMenu = 0;
         int opcionSubmenu = 0;
-        while (opcion != 3) {//Creamos el menú general que nos dirigirá al primer submenú de los juegos
+        while (opcion != 3) {
             System.out.println("Benvingut al menú de la elecció del joc, tria a quin joc vols jugar ");
             System.out.println("1. Joc 1");
             System.out.println("2. Joc 2");
             System.out.println("3. Sortir");
-            try {//Comprobamos que hemos introducido un valor correcto, si no no nos dejará proseguir hasta que lo hagamos
+            try {
                 System.out.println("Introdueix el numero del joc al que vols jugar: ");
                 opcion = sc.nextInt();
 
                 switch (opcion) {
-                    case 1://opción 1 contendrá neustro juego y dos submenus, uno para obtener las reglas y jugar y otro para volver a jugar al juego o salir al menú principal.
+                    case 1:
                         System.out.println("has entrado al Joc 1");
                         opcioMenu = 0;
                         opcionSubmenu = 0;
@@ -74,7 +74,7 @@ public class MenuEleccioJoc {//Creamos el menú que tendrán nuestros juegos
                         break;
 
 
-                    case 2://opción 2 contendrá neustro juego y dos submenus, uno para obtener las reglas y jugar y otro para volver a jugar al juego o salir al menú principal.
+                    case 2:
                         System.out.println("has entrado al Joc 2");
                         opcioMenu = 0;
                         opcionSubmenu = 0;
@@ -95,7 +95,7 @@ public class MenuEleccioJoc {//Creamos el menú que tendrán nuestros juegos
                                         break;
                                     case 2:
                                         System.out.println("Has entrat al joc 2");
-                                        mainAhorcado juego2 = new mainAhorcado();
+                                        MainAhorcado juego2 = new MainAhorcado();
                                         juego2.mainJuego2();
                                         opcionSubmenu = 0;
                                         while(opcionSubmenu != 2){
@@ -132,13 +132,13 @@ public class MenuEleccioJoc {//Creamos el menú que tendrán nuestros juegos
                         }
 
                         break;
-                    case 3: //Opcion 3 para salir del menú
+                    case 3:
                         System.out.println("Adeu, que tinguis un bon dia");
                         break;
-                    default: //Si no introducimos un valor entre 1 y 3 no podremos proseguir
+                    default:
                         System.out.println("només numeros entre 1 i 3 ");
                 }
-            } catch (InputMismatchException e) { //controlamos que se introduzca un numero entero, no una cadena de carácteres ni nada incorrecto
+            } catch (InputMismatchException e) {
                 System.out.println("Has d'introduir un número(no lletres ni altre digit) : ");
                 sc.next();
             }
