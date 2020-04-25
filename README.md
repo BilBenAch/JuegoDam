@@ -1,6 +1,6 @@
 # JocJavaUf2BelalBbenmousa
 
-Aquest projecte conté un menú general amb el seus submenús com el de la imatge complementats amb dos jocs :<br><br>
+Aquest projecte conté un menú general amb el seus submenús com el de la imatge, complementats amb dos jocs :<br><br>
 
 
 - 3 en ratlla 
