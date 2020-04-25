@@ -1,92 +1,0 @@
-
-[
-squid:S106x"9Replace this use of System.out or System.err by a logger.(€ã»Êüÿÿÿÿ8ûš—Áš.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(‹Ž½²8ÔÎÁ¬–.
-[
-squid:S106S"9Replace this use of System.out or System.err by a logger.(óò¿úüÿÿÿÿ8ûš—Áš.
-[
-squid:S106h"9Replace this use of System.out or System.err by a logger.(Ö×Ù…úÿÿÿÿ8ûš—Áš.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(úÝýúÿÿÿÿ8‡¡…­–.
-V
-squid:S106T"9Replace this use of System.out or System.err by a logger.(´ö¦Œ8ûš—Áš.
-[
-squid:S106n"9Replace this use of System.out or System.err by a logger.(©è®Îþÿÿÿÿ8ûš—Áš.
-[
-squid:S106_"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8ûš—Áš.
-W"squid:SwitchLastCaseIsDefaultCheck!""Add a default case to this switch.(Êúçß8ªè­–.
-V
-squid:S1069"9Replace this use of System.out or System.err by a logger.(Š§•ª8ûš—Áš.
-V
-squid:S106i"9Replace this use of System.out or System.err by a logger.(ˆœù¤8ûš—Áš.
-œsquid:S1192>"yDefine a constant instead of duplicating this literal "Has d'introduir un nÃºmero(no lletres ni altre digit) : " 5 times.(€ã»Êüÿÿÿÿ8ûš—Áš.
-Xsquid:S1141W"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ûš—Áš.
-Xsquid:S11411"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ûš—Áš.
-V
-squid:S106V"9Replace this use of System.out or System.err by a logger.(Œ‰¼ž8ûš—Áš.
-\
-squid:S106’"9Replace this use of System.out or System.err by a logger.(Ó©ô‚ûÿÿÿÿ8ŠŽªÁš.
-W"squid:SwitchLastCaseIsDefaultCheckZ""Add a default case to this switch.(Êúçß8ûš—Áš.
-V
-squid:S106g"9Replace this use of System.out or System.err by a logger.(¯¿Ô‰8ûš—Áš.
-V
-squid:S106)"9Replace this use of System.out or System.err by a logger.(ÿÿ—ó8”¹ø›š.
-[
-squid:S106#"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8°ŽÒ›š.
-V
-squid:S106s"9Replace this use of System.out or System.err by a logger.(Š§•ª8ûš—Áš.
-isquid:S1301l"KReplace this "switch" statement by "if" statements to increase readability.(µµå¨8ûš—Áš.
-W"squid:SwitchLastCaseIsDefaultCheckl""Add a default case to this switch.(µµå¨8ûš—Áš.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(¦ÿ«¿8ÔÎÁ¬–.
-[
-squid:S106/"9Replace this use of System.out or System.err by a logger.(Ö×Ù…úÿÿÿÿ8ò¦ùœš.
-\
-squid:S106‚"9Replace this use of System.out or System.err by a logger.(€ã»Êüÿÿÿÿ8ûš—Áš.
-[
-squid:S106U"9Replace this use of System.out or System.err by a logger.(§š¥ùúÿÿÿÿ8ûš—Áš.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(Œ‰¼ž8ÔÎÁ¬–.
-psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.(çäŠ‹8ƒÿ‘­–.
-msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çäŠ‹8ù£·¬–.
-[
-squid:S106&"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8Â©Ò›š.
-\
-squid:S106"9Replace this use of System.out or System.err by a logger.(€ã»Êüÿÿÿÿ8ûš—Áš.
-W
-squid:S106‰"9Replace this use of System.out or System.err by a logger.(Ò²Í8ûš—Áš.
-U
-squid:S106"9Replace this use of System.out or System.err by a logger.(í‚u8ÔÎÁ¬–.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(´ö¦Œ8‡¡…­–.
-W"squid:SwitchLastCaseIsDefaultCheck3""Add a default case to this switch.(µµå¨8ûš—Áš.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(·º¶Ó8¨—Ú¬–.
-[
-squid:S106H"9Replace this use of System.out or System.err by a logger.(€ã»Êüÿÿÿÿ8ûš—Áš.
-\
-squid:S106Œ"9Replace this use of System.out or System.err by a logger.(ØåÕËùÿÿÿÿ8ûš—Áš.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Å¥”«ùÿÿÿÿ8‡¡…­–.
-[
-squid:S1065"9Replace this use of System.out or System.err by a logger.(©è®Îþÿÿÿÿ8ûš—Áš.
-[
-squid:S106\"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8ûš—Áš.
-V
-squid:S106."9Replace this use of System.out or System.err by a logger.(¯¿Ô‰8Ã×øœš.
-Xsquid:S1141j"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ûš—Áš.
-V
-squid:S106b"9Replace this use of System.out or System.err by a logger.(Â£±¹8ûš—Áš.
-Xsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÿ‘­–.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(Œ‰¼ž8Åé˜­–.
-V
-squid:S1060"9Replace this use of System.out or System.err by a logger.(ˆœù¤8ûš—Áš.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Îåòýÿÿÿÿ8ÔÎÁ¬–.
-[
-squid:S106>"9Replace this use of System.out or System.err by a logger.(€ã»Êüÿÿÿÿ8ûš—Áš.
-V
-squid:S106P"9Replace this use of System.out or System.err by a logger.(†üò³8ûš—Áš.
-isquid:S13013"KReplace this "switch" statement by "if" statements to increase readability.(µµå¨8ûš—Áš.
