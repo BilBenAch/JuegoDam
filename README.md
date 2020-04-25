@@ -28,8 +28,10 @@ Aquest projecte conté un menú general amb dos jocs:
 - regles del joc
 
       El joc 2 tracta del clàssic penjat, on introduirem per teclat la paraula que desitgem buscar,
-      tindrem 10 oportunitats de trobar-la o perdrem la partida, haurem d'introduir però teclat una lletra fins a trobar-la o perdrem,
-      es poden introduir paraules accentuades, però si introduïm una lletra sense accentuar que està accentuada a la paraula, comptarà com un intent fallat.
+      tindrem 10 oportunitats de trobar-la o perdrem la partida,
+      haurem d'introduir però teclat una lletra fins a trobar-la o perdrem,
+      es poden introduir paraules accentuades, 
+      però si introduïm una lletra sense accentuar que està accentuada a la paraula, comptarà com un intent fallat.
      
 
 
