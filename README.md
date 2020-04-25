@@ -10,7 +10,7 @@ Aquest projecte conté un menú general amb dos jocs:
 
 
 
-- regldes del joc
+- regles del joc
 
       El joc 1 tracta del clàssic 3 en ratlla, on hi haurà dos jugadors, sempre començarà el jugador 1,
       el qual tindrà assignada la 'X', el jugador dos, les 'O'.
@@ -25,7 +25,7 @@ Aquest projecte conté un menú general amb dos jocs:
 
 # Penjat
 
-- regldes del joc
+- regles del joc
 
       El joc 2 tracta del clàssic penjat, on introduirem per teclat la paraula que desitgem buscar,
       tindrem 10 oportunitats de trobar-la o perdrem la partida, haurem d'introduir però teclat una lletra fins a trobar-la o perdrem,
