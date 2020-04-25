@@ -10,7 +10,7 @@ Aquest projecte conté un menú general amb el seus submenús com el de la imatg
 <br>
 
 
-![descripcion_menu](\Users\bilal\Desktop\menu.png)
+![descripcion_menu](https://user-images.githubusercontent.com/61666840/80282906-5433d480-8714-11ea-90f3-f03006784f3a.png)
 
 
 <br>
@@ -40,11 +40,11 @@ Aquest projecte conté un menú general amb el seus submenús com el de la imatg
 
 - regles del joc
 
-      El joc 2 tracta del clàssic penjat, on introduirem per teclat la paraula que desitgem buscar,
-      tindrem 10 oportunitats de trobar-la o perdrem la partida,
-      haurem d'introduir per teclat una lletra fins a trobar la paraula o perdrem,
-      es poden introduir paraules accentuades, 
-      però si introduïm una lletra sense accentuar que està accentuada a la paraula, comptarà com un intent fallat.
-     
+        El joc 2 tracta del clàssic penjat, on introduirem per teclat la paraula que desitgem buscar,
+        tindrem 10 oportunitats de trobar-la o perdrem la partida,
+        haurem d'introduir per teclat una lletra fins a trobar la paraula o perdrem,
+        es poden introduir paraules accentuades,
+        però si introduïm una lletra sense accentuar que està accentuada a la paraula, comptarà com un intent fallat,
+        per a cada intent fallat es dibuixarà cada part de la horca fins a completar el ninot dins d'ella.
 
 
