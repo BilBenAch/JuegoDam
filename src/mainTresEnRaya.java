@@ -1,4 +1,5 @@
 //menu juego 3 en raya
+
 import java.util.Scanner;
 
 public class mainTresEnRaya {
@@ -27,12 +28,12 @@ public class mainTresEnRaya {
                 System.out.println("es turno del jugador 1");
                 System.out.println("introduce la posicion que deseas (filas, columnas) ");
                 juego.Turno(turno);
-                filas = sc.nextInt() -1;
-                columnas = sc.nextInt()-1;
+                filas = sc.nextInt() - 1;
+                columnas = sc.nextInt() - 1;
                 while (juego.comprobarPosicion(filas, columnas)) {
                     System.out.println("No has introducido una posicion correcta o ya está llena introduce de nuevo: ");
-                    filas = sc.nextInt()-1;
-                    columnas = sc.nextInt()-1;
+                    filas = sc.nextInt() - 1;
+                    columnas = sc.nextInt() - 1;
                 }
                 juego.introducirPosicion(filas, columnas);
                 turno = false;
@@ -41,12 +42,12 @@ public class mainTresEnRaya {
                 System.out.println("introduce la posicion que deseas (filas, columnas) ");
                 System.out.println();
                 juego.Turno(turno);
-                filas = sc.nextInt()-1;
-                columnas = sc.nextInt()-1;
+                filas = sc.nextInt() - 1;
+                columnas = sc.nextInt() - 1;
                 while (juego.comprobarPosicion(filas, columnas)) {
                     System.out.println("No has introducido una posicion correcta o ya está llena introduce de nuevo: ");
-                    filas = sc.nextInt()-1;
-                    columnas = sc.nextInt()-1;
+                    filas = sc.nextInt() - 1;
+                    columnas = sc.nextInt() - 1;
                 }
                 juego.introducirPosicion(filas, columnas);
                 turno = true;
@@ -57,12 +58,10 @@ public class mainTresEnRaya {
         if (juego.comprobarGanador()) {
             if (juego.jugador) {
                 System.out.println("Felicidades ha ganado el jugador 1");
-            }
-            else {
+            } else {
                 System.out.println("Felicidades ha ganado el jugador 2");
             }
-        }
-        else System.out.println("Empate");
+        } else System.out.println("Empate");
 
         System.out.println();
         System.out.println("******************************");

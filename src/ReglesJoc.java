@@ -1,8 +1,9 @@
 public class ReglesJoc {
-    ReglesJoc(){
+    ReglesJoc() {
 
     }
-    void Joc1Descripcio(){
+
+    void Joc1Descripcio() {
         System.out.println();
         System.out.println("************************");
         System.out.println("Descripció del joc número 1:");
@@ -13,7 +14,8 @@ public class ReglesJoc {
         System.out.println("************************");
         System.out.println();
     }
-    void Joc2Descripcio(){
+
+    void Joc2Descripcio() {
         System.out.println();
         System.out.println("************************");
         System.out.println("Descripció del joc número 2: ");

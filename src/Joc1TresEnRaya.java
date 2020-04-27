@@ -20,7 +20,7 @@ public class Joc1TresEnRaya {
         boolean lleno = true;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if(tabla[i][j] == '-'){
+                if (tabla[i][j] == '-') {
                     lleno = false;
                 }
             }
@@ -40,25 +40,22 @@ public class Joc1TresEnRaya {
         }
     }
 
-    public boolean Turno (boolean jugador){
+    public boolean Turno(boolean jugador) {
         this.jugador = jugador;
-        if(jugador == true){
+        if (jugador == true) {
             return true;
-        }
-
-        else {
+        } else {
             return false;
         }
     }
 
     public void introducirPosicion(int filas, int columnas) {
-        if((filas < 3 && filas >= 0 ) && (columnas >= 0 && columnas < 3)){
-            if(Turno (jugador)) {
+        if ((filas < 3 && filas >= 0) && (columnas >= 0 && columnas < 3)) {
+            if (Turno(jugador)) {
                 if (tabla[filas][columnas] == '-') {
                     tabla[filas][columnas] = 'X';
                 }
-            }
-            else{
+            } else {
                 if (tabla[filas][columnas] == '-') {
                     tabla[filas][columnas] = 'O';
                 }
@@ -66,34 +63,19 @@ public class Joc1TresEnRaya {
         }
     }
 
-    public boolean comprobarPosicion(int filas, int columnas){
-        if(((filas < 3 && filas >= 0 ) && (columnas >= 0 && columnas < 3)) && (tabla[filas][columnas] == '-')){
+    public boolean comprobarPosicion(int filas, int columnas) {
+        if (((filas < 3 && filas >= 0) && (columnas >= 0 && columnas < 3)) && (tabla[filas][columnas] == '-')) {
             return false;
         }
         return true;
     }
 
-    public boolean comprobarGanadorColumnas(){
-        for(int j = 0; j<3; j++){
-            if((tabla[0][j] == 'X') && (tabla[1][j] == 'X') && (tabla[2][j] == 'X')){
+    public boolean comprobarGanadorColumnas() {
+        for (int j = 0; j < 3; j++) {
+            if ((tabla[0][j] == 'X') && (tabla[1][j] == 'X') && (tabla[2][j] == 'X')) {
 
                 return true;
-            }
-            else if(tabla[0][j] == 'O' && tabla[1][j] == 'O' && tabla[2][j] == 'O'){
-
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public boolean comprobarGanadorFilas(){
-        for(int i = 0; i<3; i++){
-            if((tabla[i][0] == 'X') && (tabla[i][1] == 'X') && (tabla[i][2] == 'X')){
-
-                return true;
-            }
-            else if((tabla[i][0] == 'O') && (tabla[i][1] == 'O') && (tabla[i][2] == 'O')){
+            } else if (tabla[0][j] == 'O' && tabla[1][j] == 'O' && tabla[2][j] == 'O') {
 
                 return true;
             }
@@ -101,12 +83,23 @@ public class Joc1TresEnRaya {
         return false;
     }
 
+    public boolean comprobarGanadorFilas() {
+        for (int i = 0; i < 3; i++) {
+            if ((tabla[i][0] == 'X') && (tabla[i][1] == 'X') && (tabla[i][2] == 'X')) {
 
-    public boolean comprobarganadorDiagonal(){
-        if(((tabla[0][0] == 'X') && (tabla[1][1] == 'X') && (tabla[2][2] == 'X')) || (tabla[0][2] == 'X') && (tabla[1][1] == 'X') && (tabla[2][0] == 'X')){
+                return true;
+            } else if ((tabla[i][0] == 'O') && (tabla[i][1] == 'O') && (tabla[i][2] == 'O')) {
+
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean comprobarganadorDiagonal() {
+        if (((tabla[0][0] == 'X') && (tabla[1][1] == 'X') && (tabla[2][2] == 'X')) || (tabla[0][2] == 'X') && (tabla[1][1] == 'X') && (tabla[2][0] == 'X')) {
             return true;
-        }
-        else if(((tabla[0][0] == 'O') && (tabla[1][1] == 'O') && (tabla[2][2] == 'O')) || (tabla[0][2] == 'O') && (tabla[1][1] == 'O') && (tabla[2][0] == 'O')){
+        } else if (((tabla[0][0] == 'O') && (tabla[1][1] == 'O') && (tabla[2][2] == 'O')) || (tabla[0][2] == 'O') && (tabla[1][1] == 'O') && (tabla[2][0] == 'O')) {
 
             return true;
         }
@@ -114,9 +107,7 @@ public class Joc1TresEnRaya {
         return false;
 
     }
-
-
-    public boolean comprobarGanador(){
+    public boolean comprobarGanador() {
         return comprobarGanadorColumnas() || comprobarGanadorFilas() || comprobarganadorDiagonal();
     }
 

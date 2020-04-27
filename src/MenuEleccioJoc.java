@@ -1,7 +1,8 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 public class MenuEleccioJoc {
-    public void MenuJoc(){
+    public void MenuJoc() {
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
         int opcioMenu = 0;
@@ -20,7 +21,7 @@ public class MenuEleccioJoc {
                         System.out.println("has entrado al Joc 1");
                         opcioMenu = 0;
                         opcionSubmenu = 0;
-                        while(opcioMenu != 3 && opcionSubmenu!= 2) {
+                        while (opcioMenu != 3 && opcionSubmenu != 2) {
                             System.out.println("----Has triat el joc 1, que vols fer----");
                             System.out.println("1. Saber les regles");
                             System.out.println("2. Jugar al joc 1 ");
@@ -40,7 +41,7 @@ public class MenuEleccioJoc {
                                         mainTresEnRaya juego1 = new mainTresEnRaya();
                                         juego1.mainJuego1();
                                         opcionSubmenu = 0;
-                                        while(opcionSubmenu != 2){
+                                        while (opcionSubmenu != 2) {
                                             System.out.println("Que vols fer acontinuació: ");
                                             System.out.println("1- Jugar de nou: ");
                                             System.out.println("2- sortir al menú principal: ");
@@ -56,7 +57,7 @@ public class MenuEleccioJoc {
                                                         break;
                                                 }
 
-                                            }catch (InputMismatchException e) {
+                                            } catch (InputMismatchException e) {
                                                 System.out.println("Has d'introduir un número(no lletres ni altre digit) : ");
                                                 sc.next();
                                             }
@@ -66,7 +67,7 @@ public class MenuEleccioJoc {
                                     case 3:
                                         break;
                                 }
-                            }catch (InputMismatchException e) {
+                            } catch (InputMismatchException e) {
                                 System.out.println("Has d'introduir un número(no lletres ni altre digit) : ");
                                 sc.next();
                             }
@@ -78,7 +79,7 @@ public class MenuEleccioJoc {
                         System.out.println("has entrado al Joc 2");
                         opcioMenu = 0;
                         opcionSubmenu = 0;
-                        while(opcioMenu != 3 && opcionSubmenu!= 2) {
+                        while (opcioMenu != 3 && opcionSubmenu != 2) {
                             System.out.println("----Has triat el joc 2, que vols fer----");
                             System.out.println("1. Saber les regles");
                             System.out.println("2. Jugar al joc 2 ");
@@ -98,7 +99,7 @@ public class MenuEleccioJoc {
                                         MainAhorcado juego2 = new MainAhorcado();
                                         juego2.mainJuego2();
                                         opcionSubmenu = 0;
-                                        while(opcionSubmenu != 2){
+                                        while (opcionSubmenu != 2) {
                                             System.out.println("Que vols fer acontinuació: ");
                                             System.out.println("1- Jugar de nou: ");
                                             System.out.println("2- sortir al menú principal: ");
@@ -115,7 +116,7 @@ public class MenuEleccioJoc {
                                                         break;
                                                 }
 
-                                            }catch (InputMismatchException e) {
+                                            } catch (InputMismatchException e) {
                                                 System.out.println("Has d'introduir un número(no lletres ni altre digit) : ");
                                                 sc.next();
                                             }
@@ -125,7 +126,7 @@ public class MenuEleccioJoc {
                                     case 3:
                                         break;
                                 }
-                            }catch (InputMismatchException e) {
+                            } catch (InputMismatchException e) {
                                 System.out.println("Has d'introduir un número(no lletres ni altre digit) : ");
                                 sc.next();
                             }

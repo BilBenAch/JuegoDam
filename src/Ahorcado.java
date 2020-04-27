@@ -1,34 +1,34 @@
 public class Ahorcado {
-    char letra ;
+    char letra;
     String palabraEscondida;
     char[] comillas;
     int fallos;
-    Ahorcado(String palabraEscondida ){
+
+    Ahorcado(String palabraEscondida) {
         fallos = 0;
         this.palabraEscondida = palabraEscondida;
-        comillas = new char [palabraEscondida.length()];
+        comillas = new char[palabraEscondida.length()];
     }
 
-    public void iniciarComillas(){
-        for(int i = 0; i<comillas.length; i++){
+    public void iniciarComillas() {
+        for (int i = 0; i < comillas.length; i++) {
             comillas[i] = '_';
         }
     }
 
 
-    public void pintarComillas(){
+    public void pintarComillas() {
         System.out.println();
-        for(int i = 0; i<comillas.length; i++){
-            System.out.print(comillas[i]+" ");
+        for (int i = 0; i < comillas.length; i++) {
+            System.out.print(comillas[i] + " ");
         }
     }
 
-    public int comprobarLetra (char letra){
+    public int comprobarLetra(char letra) {
         int contador = 0;
-        for(int i=0; i<palabraEscondida.length(); i++){
-            if(letra != palabraEscondida.charAt(i)){
-            }
-            else {
+        for (int i = 0; i < palabraEscondida.length(); i++) {
+            if (letra != palabraEscondida.charAt(i)) {
+            } else {
                 comillas[i] = letra;
                 contador++;
             }
@@ -39,118 +39,107 @@ public class Ahorcado {
     }
 
 
-    boolean palabraEncontrada(){
+    boolean palabraEncontrada() {
         int contador = 0;
-        for(int i= 0; i<palabraEscondida.length(); i++){
-            if(palabraEscondida.charAt(i) == comillas[i]){
-                contador ++;
+        for (int i = 0; i < palabraEscondida.length(); i++) {
+            if (palabraEscondida.charAt(i) == comillas[i]) {
+                contador++;
             }
         }
-        if(contador == palabraEscondida.length()){
+        if (contador == palabraEscondida.length()) {
             return true;
         }
 
         return false;
     }
 
-    boolean encontrada(){
+    boolean encontrada() {
 
         return palabraEncontrada();
     }
 
 
-    public void dibujarFallos(){
+    public void dibujarFallos() {
 
         String dibujo = "";
-        if(fallos == 1 ){
-            System.out.println( "---------------");
-        }
-        else if(fallos == 2){
+        if (fallos == 1) {
+            System.out.println("---------------");
+        } else if (fallos == 2) {
 
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "---------------");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("---------------");
 
 
-        }
-        else if (fallos == 3){
+        } else if (fallos == 3) {
 
-            System.out.println( "---------");
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "---------------");
+            System.out.println("---------");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("---------------");
 
-        }
+        } else if (fallos == 4) {
 
-        else if (fallos == 4) {
+            System.out.println("---------");
+            System.out.println("|" + "       |");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("---------------");
 
-            System.out.println( "---------");
-            System.out.println( "|"+"       |");
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "---------------");
+        } else if (fallos == 5) {
+            System.out.println("---------");
+            System.out.println("|" + "       |");
+            System.out.println("|" + "       o");
+            System.out.println("|");
+            System.out.println("|");
+            System.out.println("---------------");
 
-        }
+        } else if (fallos == 6) {
+            System.out.println("---------");
+            System.out.println("|" + "       |");
+            System.out.println("|" + "       o ");
+            System.out.println("|" + "       | ");
+            System.out.println("|");
+            System.out.println("---------------");
 
-        else if (fallos == 5) {
-            System.out.println( "---------");
-            System.out.println( "|"+"       |");
-            System.out.println( "|"+"       o");
-            System.out.println( "|" );
-            System.out.println( "|" );
-            System.out.println( "---------------");
+        } else if (fallos == 7) {
 
-        }
-        else if (fallos == 6) {
-            System.out.println( "---------");
-            System.out.println( "|"+"       |");
-            System.out.println( "|"+"       o ");
-            System.out.println( "|"+"       | ");
-            System.out.println( "|" );
-            System.out.println( "---------------");
+            System.out.println("---------");
+            System.out.println("|" + "       |");
+            System.out.println("|" + "       o ");
+            System.out.println("|" + "      /| ");
+            System.out.println("|");
+            System.out.println("---------------");
 
-        }
-        else if (fallos == 7) {
+        } else if (fallos == 8) {
 
-            System.out.println( "---------");
-            System.out.println( "|"+"       |");
-            System.out.println( "|"+"       o ");
-            System.out.println( "|"+"      /| ");
-            System.out.println( "|" );
-            System.out.println( "---------------");
+            System.out.println("---------");
+            System.out.println("|" + "       |");
+            System.out.println("|" + "       o ");
+            System.out.println("|" + "      /|\\");
+            System.out.println("|");
+            System.out.println("---------------");
 
-        }
-        else if (fallos == 8) {
+        } else if (fallos == 9) {
+            System.out.println("---------");
+            System.out.println("|" + "       |");
+            System.out.println("|" + "       o ");
+            System.out.println("|" + "      /|\\");
+            System.out.println("|" + "      / ");
+            System.out.println("---------------");
 
-            System.out.println( "---------");
-            System.out.println( "|"+"       |");
-            System.out.println( "|"+"       o ");
-            System.out.println( "|"+"      /|\\");
-            System.out.println( "|" );
-            System.out.println( "---------------");
-
-        }
-        else if (fallos == 9) {
-            System.out.println( "---------");
-            System.out.println( "|"+"       |");
-            System.out.println( "|"+"       o ");
-            System.out.println( "|"+"      /|\\");
-            System.out.println( "|"+"      / ");
-            System.out.println( "---------------");
-
-        }
-        else if (fallos == 10) {
-            System.out.println( "---------");
-            System.out.println( "|"+"       |");
-            System.out.println( "|"+"       o ");
-            System.out.println( "|"+"      /|\\");
-            System.out.println( "|"+"      / \\");
-            System.out.println( "---------------");
+        } else if (fallos == 10) {
+            System.out.println("---------");
+            System.out.println("|" + "       |");
+            System.out.println("|" + "       o ");
+            System.out.println("|" + "      /|\\");
+            System.out.println("|" + "      / \\");
+            System.out.println("---------------");
 
         }
 
