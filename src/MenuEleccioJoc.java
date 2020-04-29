@@ -1,8 +1,10 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MenuEleccioJoc {
-    public void MenuJoc() {
+public class MenuEleccioJoc implements Menu {
+
+    @Override
+    public void mostra() {
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
         int opcioMenu = 0;
@@ -19,27 +21,20 @@ public class MenuEleccioJoc {
                 switch (opcion) {
                     case 1:
                         System.out.println("has entrado al Joc 1");
+                        TresEnRatlla joc1 = new TresEnRatlla();
                         opcioMenu = 0;
                         opcionSubmenu = 0;
                         while (opcioMenu != 3 && opcionSubmenu != 2) {
-                            System.out.println("----Has triat el joc 1, que vols fer----");
-                            System.out.println("1. Saber les regles");
-                            System.out.println("2. Jugar al joc 1 ");
-                            System.out.println("3. Sortir ");
+                            joc1.mostraMenu();
                             try {
                                 opcioMenu = sc.nextInt();
-
                                 switch (opcioMenu) {
                                     case 1:
-                                        System.out.println();
-                                        ReglesJoc reglas = new ReglesJoc();
-                                        reglas.Joc1Descripcio();
-                                        System.out.println();
+                                        joc1.mostraRegles();
                                         break;
                                     case 2:
                                         System.out.println("Has entrat al joc 1");
-                                        mainTresEnRaya juego1 = new mainTresEnRaya();
-                                        juego1.mainJuego1();
+                                        joc1.juga();
                                         opcionSubmenu = 0;
                                         while (opcionSubmenu != 2) {
                                             System.out.println("Que vols fer acontinuació: ");
@@ -50,10 +45,14 @@ public class MenuEleccioJoc {
                                                 switch (opcionSubmenu) {
                                                     case 1:
                                                         System.out.println("D'acord, jugant de nou: ");
-                                                        juego1.mainJuego1();
+                                                        joc1.juga();
                                                         break;
                                                     case 2:
                                                         System.out.println("Sortint al menú principal");
+                                                        break;
+
+                                                    default:
+                                                        System.out.println("opció incorrecta: ");
                                                         break;
                                                 }
 
@@ -73,31 +72,22 @@ public class MenuEleccioJoc {
                             }
                         }
                         break;
-
-
                     case 2:
                         System.out.println("has entrado al Joc 2");
+                        Penjat joc2 = new Penjat();
                         opcioMenu = 0;
                         opcionSubmenu = 0;
                         while (opcioMenu != 3 && opcionSubmenu != 2) {
-                            System.out.println("----Has triat el joc 2, que vols fer----");
-                            System.out.println("1. Saber les regles");
-                            System.out.println("2. Jugar al joc 2 ");
-                            System.out.println("3. Sortir ");
+                            joc2.mostraMenu();
                             try {
                                 opcioMenu = sc.nextInt();
-
                                 switch (opcioMenu) {
                                     case 1:
-                                        System.out.println();
-                                        ReglesJoc reglas = new ReglesJoc();
-                                        reglas.Joc2Descripcio();
-                                        System.out.println();
+                                        joc2.mostraRegles();
                                         break;
                                     case 2:
                                         System.out.println("Has entrat al joc 2");
-                                        MainAhorcado juego2 = new MainAhorcado();
-                                        juego2.mainJuego2();
+                                        joc2.juga();
                                         opcionSubmenu = 0;
                                         while (opcionSubmenu != 2) {
                                             System.out.println("Que vols fer acontinuació: ");
@@ -108,11 +98,13 @@ public class MenuEleccioJoc {
                                                 switch (opcionSubmenu) {
                                                     case 1:
                                                         System.out.println("D'acord, jugant de nou: ");
-                                                        juego2.mainJuego2();
-
+                                                        joc2.juga();
                                                         break;
                                                     case 2:
                                                         System.out.println("Sortint al menú principal");
+                                                        break;
+                                                    default:
+                                                        System.out.println("opció incorrecta: ");
                                                         break;
                                                 }
 
@@ -131,7 +123,6 @@ public class MenuEleccioJoc {
                                 sc.next();
                             }
                         }
-
                         break;
                     case 3:
                         System.out.println("Adeu, que tinguis un bon dia");
@@ -144,7 +135,6 @@ public class MenuEleccioJoc {
                 sc.next();
             }
         }
-
     }
-
 }
+
