@@ -152,16 +152,16 @@ public class Penjat extends Joc {
         System.out.println();
         System.out.println();
         System.out.println("******************************************");
-        System.out.println("Bienvenido al juego del ahorcado: ");
-        System.out.println("Introduce la palabra a buscar: ");
+        System.out.println("Benvingut al joc del penjat: ");
+        System.out.println("Introdueix la paraula a buscar: ");
         palabraEscondida = sc.nextLine();
         boolean comprobarPalabra = false;
         while (!comprobarPalabra) {
             if (Pattern.matches("^[a-zA-Z\\u00C0-\\u00FF]*$", palabraEscondida)) {
                 comprobarPalabra = true;
             } else {
-                System.out.println("La palabra introducida no cumple con el formato, no se aceptan numeros, solo letras");
-                System.out.println("Introduce la palabra de nuevo: ");
+                System.out.println("La paraula introduïda no compleix amb el format, no s'accepten números, només lletres");
+                System.out.println("Introdueix la paraula de nou: ");
                 palabraEscondida = sc.nextLine();
             }
         }
@@ -172,26 +172,26 @@ public class Penjat extends Joc {
         while (!encontrada() && fallos < 10) {
             pintarComillas();
             System.out.println();
-            System.out.println("Introduce una letra (si la palabra que deseamos obtener tiene tilde debes introducirla igual o contará como fallo, si introduces un numero o dígito que no corresponda  auna eltra también contará como fallo: ");
+            System.out.println("Introdueix una lletra (si la paraula que vulguem obtenir s'accentua has d'introduir-la igual o contarà com a malament i es sumarà un error, si introdueixes un número o dígit que no correspongui a una lletra també contarà com malament: ");
             letra = sc.next().charAt(0);
             letra = Character.toLowerCase(letra);
             comprobarLetra(letra);
             if (comprobarLetra(letra) == 0) {
                 fallos++;
-                System.out.println("La letra no está en la palabra, te quedan " + (10 - fallos) + " Intentos");
+                System.out.println("La lletra no està en la paraula, quedan " + (10 - fallos) + " Intents");
                 dibujarFallos();
             } else {
                 if (!encontrada()) {
-                    System.out.println("Muy bien la letra si está");
+                    System.out.println("Molt bé la lletra si està");
                     System.out.println();
                 } else {
-                    System.out.println("Felicidades, has adivinado la palabra :D");
-                    System.out.println("la palabra era: " + palabraEscondida);
+                    System.out.println("Felicitats, has endevinat la paraula :D");
+                    System.out.println("la paraula era: " + palabraEscondida);
                 }
             }
         }
         if (!encontrada()) {
-            System.out.println("Has perdido la palabra era " + palabraEscondida);
+            System.out.println("Has perdut la paraula era " + palabraEscondida);
         }
         System.out.println();
         System.out.println();
