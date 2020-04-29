@@ -8,7 +8,7 @@ public class mainTresEnRaya {
         System.out.println();
         System.out.println();
         System.out.println("******************************");
-        System.out.println("Bienvenido al juego de tres en raya, espero que lo pases bien :DD");
+        System.out.println("Benvingut al joc del tres en ratlla, espero que t'ho passis bé :DD");
         System.out.println();
         Scanner sc = new Scanner(System.in);
         Joc1TresEnRaya juego = new Joc1TresEnRaya();
@@ -25,27 +25,27 @@ public class mainTresEnRaya {
 
         while (!juego.estaLLeno() && !juego.comprobarGanador()) {
             if (turno) {
-                System.out.println("es turno del jugador 1");
-                System.out.println("introduce la posicion que deseas (filas, columnas) ");
+                System.out.println("és el torn del jugador 1");
+                System.out.println("Introdueix la posició que vulguis (files, columnes): ");
                 juego.Turno(turno);
                 filas = sc.nextInt() - 1;
                 columnas = sc.nextInt() - 1;
                 while (juego.comprobarPosicion(filas, columnas)) {
-                    System.out.println("No has introducido una posicion correcta o ya está llena introduce de nuevo: ");
+                    System.out.println("No has introduït una posició correcta o ja està plena, introdueix de nou: ");
                     filas = sc.nextInt() - 1;
                     columnas = sc.nextInt() - 1;
                 }
                 juego.introducirPosicion(filas, columnas);
                 turno = false;
             } else {
-                System.out.println("es turno del jugador 2");
-                System.out.println("introduce la posicion que deseas (filas, columnas) ");
+                System.out.println("és el torn del jugador 2");
+                System.out.println("Introdueix la posició que vulguis (files, columnes): ");
                 System.out.println();
                 juego.Turno(turno);
                 filas = sc.nextInt() - 1;
                 columnas = sc.nextInt() - 1;
                 while (juego.comprobarPosicion(filas, columnas)) {
-                    System.out.println("No has introducido una posicion correcta o ya está llena introduce de nuevo: ");
+                    System.out.println("No has introduït una posició correcta o ja està plena, introdueix de nou: ");
                     filas = sc.nextInt() - 1;
                     columnas = sc.nextInt() - 1;
                 }
@@ -57,11 +57,11 @@ public class mainTresEnRaya {
         }
         if (juego.comprobarGanador()) {
             if (juego.jugador) {
-                System.out.println("Felicidades ha ganado el jugador 1");
+                System.out.println("Felicitats ha guanyat el jugador 1");
             } else {
-                System.out.println("Felicidades ha ganado el jugador 2");
+                System.out.println("Felicitats ha guanyat el jugador 2");
             }
-        } else System.out.println("Empate");
+        } else System.out.println("Empat");
 
         System.out.println();
         System.out.println("******************************");
