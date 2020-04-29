@@ -171,9 +171,9 @@ public class TresEnRatlla extends Joc {
         }
         if (comprobarGanador()) {
             if (jugador) {
-                System.out.println("Felicitats has guanyat el jugador 1");
+                System.out.println("Felicitats ha guanyat el jugador 1");
             } else {
-                System.out.println("Felicitats has guanyat el jugador 2");
+                System.out.println("Felicitats ha guanyat el jugador 2");
             }
         } else System.out.println("Empat");
 
