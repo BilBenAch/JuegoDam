@@ -47,4 +47,17 @@ Aquest projecte conté un menú general amb el seus submenús com el de la imatg
         però si introduïm una lletra sense accentuar que està accentuada a la paraula, comptarà com un intent fallat,
         per a cada intent fallat es dibuixarà cada part de la horca fins a completar el ninot dins d'ella.
 
+<br>
+
+### Requisits previs
+
+* JDK 1.8+
+
+### Executar programa
+
+Per executar el programa cal aplicar la següent comanda en la terminal: 
+
+```
+$ java -jar JocJavaUf2BelalBbenmousa.jar
+```
 
